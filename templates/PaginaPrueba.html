@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Control de temperatura</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<style type="text/css">
+		header {
+		    background-color: #2980b9;
+		    color: white;
+		}
+ 
+		aside{
+			background-color: #0f5786;
+			color: white;
+		}
+		
+		#h1temp{
+			font-size: 100px;
+		}
+ 
+		.color1{
+			background-color: #e67d22;
+			color: white;
+		}
+ 
+		.color2{
+			background-color: white;
+			color: #e67d22;
+		}
+ 
+		footer {
+		    background-color: #2980b9;
+		    color: white;
+		}
+ 
+		a:link {
+			color: white;
+		}
+ 
+		a:visited {
+		    color: white;
+		}
+ 
+		a:hover {
+		    color: hotpink;
+		}
+ 
+		a:active {
+		    color: white;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<h1>Control de temperatura</h1>
+			<h3>Arduino MKR100</h3>
+			<h4><a>Muestra de Temperatura y Humedad</a></h4>
+		</div>
+	</header>
+ 
+	<div class="container">
+		<section class="main row">
+			<article class="col-xs-12 col-sm-4 col-md-4 col-lg-4 ">
+				<h3 class="text-center">Temperatura</h3>
+				<h1 id="h1temp" class="text-center">{{ temperatura }}°</h1>
+			</article>
+			<article class="col-xs-12 col-sm-4 col-md-4 col-lg-4 ">
+				<h3 class="text-center">Humedad</h3>
+				<h1 id="h1temp" class="text-center">{{ humedad }}%</h1>
+			</article>
+			<aside class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+				<h3>Arduino MKR1010</h3>
+				<p><img src="https://blog.arduino.cc/wp-content/uploads/2017/09/mkrwan_front-1.jpg" alt="MKR1010" style="width:190px;height:127px;" class="img-responsive center-block"></p>
+			</aside>
+		</section>
+	</div>
+ 
+	<footer>
+		<div class="container">
+			<h4>---------</h4>
+		</div>
+	</footer>
+	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
+</body>
+</html>
